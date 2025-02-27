@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #380166);
+
+}
+
+#contenedor {
+    width:1070px;
+    margin: 50px auto 0 auto;
+    
+}
+
+
+#cabecera {
+    background: linear-gradient(to right, #000000, #380166);
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+#cabecera h1 {
+    margin: 0;
+    font-size: 3em;
+    color: var(--color-primario);
+    text-shadow: 0 0 10px rgba(76, 0, 255, 0.5);
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#menu li {
+    display: inline;
+    margin-left: 20px;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #a063d3;
+}
+
+
+
+.clear {
+    clear: both;
+  }
+
+.introduccion {
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(to right, #a063d3, #eed8ff);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.articulo {
+    width: 70%;
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(to right, #4b0082, #8a2be2); /* Colores más claros para mejor contraste */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: #ffffff; /* Texto blanco para mejor legibilidad */
+}
+
+.articulo h2 {
+    color: #ffeb3b; /* Color amarillo para destacar los títulos */
+}
+
+.articulo p {
+    color: #ffffff; /* Texto blanco para mejor legibilidad */
+}
+
+.articulo .info span {
+    color: #ffeb3b; /* Color amarillo para destacar la información */
+}
+
+.articulo .btn-more a {
+    color: #ffeb3b; /* Color amarillo para los enlaces */
+    text-decoration: none;
+}
+
+.articulo .btn-more a:hover {
+    color: #ffffff; /* Color blanco al pasar el cursor por encima */
+}
