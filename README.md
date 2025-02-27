@@ -1,2 +1,2 @@
-# proyectoIndra
+# Proyecto Indra
 Retos Indra
