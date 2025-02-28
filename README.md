@@ -1,6 +1,6 @@
 # Proyecto Indra
 Retos Indra
-Estos retos están divididos en 4 Carpitas, las cuales son:
+Estos retos están divididos en cuatro carpetas, las cuales son:
 ---
 
 1. [BBDD: Proyecto de bases de datos](#bbdd-proyecto-de-bases-de-datos)  
