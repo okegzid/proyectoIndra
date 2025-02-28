@@ -14,7 +14,64 @@ Estos retos están divididos en 4 Carpitas, las cuales son:
 
 Esta carpeta contiene un archivo SQL con el script para la creación de la base de datos. También incluye un PDF 
 con toda la información sobre las entidades, atributos y un diagrama Entidad-Relación.
-   
+
+   ![Proyecto drawio](https://github.com/user-attachments/assets/061f7f76-d7ee-4a07-8623-5368a1fdbfef)
+
+Tabla organizador
+
+	create table organizador(
+	idOrganizador int unsigned primary key auto_increment,
+	nombre varchar(25) not null,
+	tipoOrganizador enum('empresa','institución','independiente')
+	);
+ Tabla tipos
+
+ 	create table tipos(
+	idTipos int unsigned primary key auto_increment,
+	nombre varchar(50) not null
+	);
+ Tabla eventos
+ 
+	create table evento(
+	idEvento int unsigned primary key auto_increment,
+	nombre varchar(25) not null,
+	fecha date not null,
+	duracion int not null,
+	ubicacion varchar(50) not null,
+	idTipo int unsigned not null,
+	idOrganizador int unsigned null,
+	foreign key (idTipo) references tipos(idTipos) on delete cascade on update cascade ,
+	foreign key (idOrganizador) references organizador(idOrganizador)
+	);
+
+ Tabla usuarios
+
+ 	create table usuarios(
+	idUsuarios int unsigned primary key auto_increment,
+	nombre varchar(25) not null,
+	correo varchar(50) not null,
+	contraseña varchar(50) not null
+	);
+
+ Tabla inscripciones
+
+	create table inscripciones(
+	idInscripciones int unsigned primary key auto_increment,
+	idUsuarios int unsigned not null,
+	idEvento int unsigned not null,
+	foreign key (idUsuarios) references usuarios(idUsuarios) on delete cascade on update cascade,
+	foreign key (idEvento) references evento(idEvento) on delete cascade on update cascade
+	);
+ Tabla contactos
+
+ 	create table contactos(
+	idContactos int unsigned primary key auto_increment,
+	idOrganizador int unsigned not null,
+	tipoContacto enum('teléfono','correo') not null,
+	valor varchar(25) not null,
+	foreign key (idOrganizador) references organizador(idOrganizador) on delete cascade on update cascade
+	);
+ 
 ## HTML-CSS: Proyecto de lenguaje de marcas  
    
 IMPORTANTE: La página debe abrirse con un Live Server para funcionar correctamente.
