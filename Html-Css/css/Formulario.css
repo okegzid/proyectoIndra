@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #380166);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenedor {
+    width: 1070px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+#cabecera {
+    background: linear-gradient(to right, #000000, #380166);
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+#cabecera h1 {
+    margin: 0;
+    font-size: 2em;
+    color: var(--color-primario);
+    text-shadow: 0 0 10px rgba(76, 0, 255, 0.5);
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#menu li {
+    display: inline;
+    margin-left: 20px;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #a063d3;
+}
+
+/* Contenedor del formulario */
+.container {
+    margin-top: 30px; 
+    margin-left: 32.5%;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    
+}
+
+/* Título */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Campos de entrada */
+input, textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto :focus */
+input:focus, textarea:focus {
+    border-color: #2575fc;
+    box-shadow: 0px 0px 8px rgba(37, 117, 252, 0.5);
+    outline: none;
+}
+
+/* Botón */
+button {
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+/* Efecto hover en el botón */
+button:hover {
+    background-color: #1a5bbd;
+}
